@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DEMO GSOSLIDER</title>
+	<link rel="stylesheet" type="text/css" href="gsoslider.css">
+</head>
+<body>
+	<div id="slider">
+		<section>
+			<h2>Slider 1</h2>
+			<img src="https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97400&w=400&h=400" />
+		</section>
+		<section>
+			<h2>Slider 2</h2>
+			<img src="https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97400&w=400&h=400" />
+		</section>
+	</div>
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+<script src="gsoslider.js"></script>
+<script>
+	$(document).ready(function(){
+		$("#slider").gsoslider();
+	})
+</script>
+</body>
+</html>

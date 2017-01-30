@@ -1,0 +1,24 @@
+body{
+	margin:0;
+	padding:0;
+}
+.gsoslider-container{
+	width: 90%;
+	margin:auto;
+	overflow: hidden;
+}
+.gsoslider-container img{
+	width: 100%;
+	display: block;
+	margin-bottom: 1em;
+}
+
+.gsoslider-container section{
+	float:left;
+}
+.gsoslider{
+	display: table;
+	position: relative;
+	left:0;
+	transition: all .3s;
+}
