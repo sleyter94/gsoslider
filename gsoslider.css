@@ -5,7 +5,10 @@ body{
 .gsoslider-container{
 	width: 90%;
 	margin:auto;
+	max-width: 900px;
 	overflow: hidden;
+	position: relative;
+	box-shadow: 0 0 0 10px #fff, 0 15px 50px;
 }
 .gsoslider-container img{
 	width: 100%;
@@ -21,4 +24,28 @@ body{
 	position: relative;
 	left:0;
 	transition: all .3s;
+}
+
+.gsoslider-prev, .gsoslider-next{
+	width: 40px;
+	height: 40px;
+	background: rgba(255,255,255,0.5);
+	position: absolute;
+	top:50%;
+	transform: translateY(-50%);
+	line-height: 40px;
+	font-size: 22px;
+	font-weight: bold;
+	text-align: center;
+	border-radius: 50%;
+	cursor:pointer;
+}
+.gsoslider-prev:hover, .gsoslider-next:hover{
+	background: rgba(255,255,255,1);
+}
+.gsoslider-prev{
+	left: 10px;
+}
+.gsoslider-next{
+	right: 10px;
 }

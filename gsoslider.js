@@ -11,10 +11,10 @@
 			var container = t.children('.gsoslider')
 			container.css('width',100*n+'%')
 			items.css('width',100/n+'%')
-			var prev = $('<a href="#">'+settings.prev+'</a>')
-			var next = $('<a href="#">'+settings.next+'</a>')
-			ele.after(next)
-			ele.after(prev)
+			var prev = $('<a class="gsoslider-prev" href="#">'+settings.prev+'</a>')
+			var next = $('<a class="gsoslider-next" href="#">'+settings.next+'</a>')
+			ele.append(next)
+			ele.append(prev)
 			var i = 0;
 			next.on('click',function(e){
 				e.preventDefault()
