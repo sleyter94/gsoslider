@@ -20,15 +20,21 @@
 				e.preventDefault()
 				if(i<n-1){
 					i++;
-					slide(container,i);
+				}else if(i==n-1){
+					i=0;
 				}
+				slide(container,i)
+				
 			})
 			prev.on('click',function(e){
 				e.preventDefault()
 				if(i>0){
 					i--;
-					slide(container,i);
+				}else if(i==0){
+					i=n-1;
 				}
+				slide(container,i);
+				
 			})
 			$(document).on('keydown',function(e){
 				switch(e.which){

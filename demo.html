@@ -8,11 +8,23 @@
 	<div id="slider">
 		<section>
 			<h2>Slider 1</h2>
-			<img src="https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97400&w=400&h=400" />
+			<img src="https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97400&w=850&h=250" />
 		</section>
 		<section>
 			<h2>Slider 2</h2>
-			<img src="https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97400&w=400&h=400" />
+			<img src="https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97400&w=850&h=250" />
+		</section>
+		<section>
+			<h2>Slider 3</h2>
+			<img src="https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97400&w=850&h=250" />
+		</section>
+		<section>
+			<h2>Slider 4</h2>
+			<img src="https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97400&w=850&h=250" />
+		</section>
+		<section>
+			<h2>Slider 5</h2>
+			<img src="https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97400&w=850&h=250" />
 		</section>
 	</div>
 <script
@@ -22,7 +34,10 @@
 <script src="gsoslider.js"></script>
 <script>
 	$(document).ready(function(){
-		$("#slider").gsoslider();
+		$("#slider").gsoslider({
+			prev:'<',
+			next:'>'
+		});
 	})
 </script>
 </body>
