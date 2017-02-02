@@ -50,7 +50,8 @@
 		})
 
 		function slide(ci,i){
-			ci.css('left',-100*i + '%')
+			ci.animate({'left':-100*i + '%'},settings.delay)
+
 		}
 	}
 
@@ -59,6 +60,12 @@
 		next:'Next',
 		auto:false,
 		delay:5000,
-		container:'section'
+		effect:'',
+		container:'section',
+		data:{
+			title:'',
+			img:'',
+			description:''
+		}//for json response
 	}
 }(jQuery))

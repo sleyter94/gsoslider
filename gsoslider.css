@@ -23,7 +23,7 @@ body{
 	display: table;
 	position: relative;
 	left:0;
-	transition: all .3s;
+	/*transition: all .3s;*/
 }
 
 .gsoslider-prev, .gsoslider-next{
