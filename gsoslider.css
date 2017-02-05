@@ -49,3 +49,12 @@ body{
 .gsoslider-next{
 	right: 10px;
 }
+.gsoslider-caption{
+	position:absolute;
+	bottom:0;
+	padding:15px 0;
+	background: rgba(0,0,0,0.4);
+	z-index: 10;
+	color:#fff;
+	text-align:center;
+}

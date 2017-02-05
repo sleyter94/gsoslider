@@ -10,6 +10,7 @@
 			var t = ele.wrapInner('<div class="gsoslider">')
 			var container = t.children('.gsoslider')
 			container.css('width',100*n+'%')
+			container.find('p').addClass('gsoslider-caption').css('width',100/n+'%')
 			items.css('width',100/n+'%')
 			var prev = $('<a class="gsoslider-prev" href="#">'+settings.prev+'</a>')
 			var next = $('<a class="gsoslider-next" href="#">'+settings.next+'</a>')
@@ -59,7 +60,7 @@
 		prev:'Prev',
 		next:'Next',
 		auto:false,
-		delay:5000,
+		delay:2000,
 		effect:'',
 		container:'section',
 		data:{
